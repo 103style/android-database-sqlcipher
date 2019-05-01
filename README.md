@@ -12,6 +12,8 @@ Download : [android-database-sqlcipher-4.1.3.aar](https://github.com/103style/an
 * 可参考[Demo](https://github.com/103style/android-database-sqlcipher/tree/master/Demo)
 ---
 
+
+
 >转载请以链接形式标明出处： 
 本文出自:[**103style的博客**](http://blog.csdn.net/lxk_1993) 
 
@@ -26,6 +28,29 @@ Download : [android-database-sqlcipher-4.1.3.aar](https://github.com/103style/an
 以下是笔者基于 **开源版本 4.1.3 版本** 编译之后生成文件的项目地址: [android-database-sqlcipher](https://github.com/103style/android-database-sqlcipher)
 或者直接点击下载 **4.1.3版本**对应的`aar包`。[下载链接](https://raw.githubusercontent.com/103style/android-database-sqlcipher/master/outputs/aar/android-database-sqlcipher-4.1.3.aar)
 
+### 使用方法
+[官方介绍：https://www.zetetic.net/sqlcipher/sqlcipher-for-android/](https://www.zetetic.net/sqlcipher/sqlcipher-for-android/)
+* **添加 aar 到 工程 libs 目录下，然后添加以下**
+```
+android {
+   ...
+   //此处看实际工程是否配置了统一的aar目录
+    repositories {
+        flatDir {
+            dirs 'libs'
+        }
+    }
+    ...
+}
+
+dependencies {
+    ...
+    api(name: "android-database-sqlcipher-4.1.3", ext: 'aar')
+}
+```
+* 用 `import net.sqlcipher.database.SQLiteDatabase` 替换 `import android.database.sqlite.SQLiteDatabase`
+* 在初始化数据库的时候先调用 `SQLiteDatabase.loadLibs(context);`
+* 可参考 [Demo](https://github.com/103style/android-database-sqlcipher/tree/master/Demo)
 
 ### 编译方法
 * **官方4.1.3版本 介绍的编译方法**。`感觉太简介了，新手表示很难受`
