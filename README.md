@@ -5,6 +5,11 @@ fork from https://github.com/sqlcipher/android-database-sqlcipher
 
 Download : [android-database-sqlcipher-4.1.3.aar](https://github.com/103style/android-database-sqlcipher/blob/master/outputs/aar/android-database-sqlcipher-4.1.3.aar)
 
+### 使用方法
+* [官方介绍 ](https://www.zetetic.net/sqlcipher/sqlcipher-for-android/)
+  用 `import net.sqlcipher.database.SQLiteDatabase` 替换 `import android.database.sqlite.SQLiteDatabase`,以及在初始化数据库的时候先调用`SQLiteDatabase.loadLibs(context);`
+
+* 可参考[Demo](https://github.com/103style/android-database-sqlcipher/tree/master/Demo)
 ---
 
 >转载请以链接形式标明出处： 
