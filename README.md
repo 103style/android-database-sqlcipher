@@ -69,6 +69,7 @@ Download : [android-database-sqlcipher-4.1.3.aar](https://github.com/103style/an
     export PATH=$PATH:$ANDROID_NDK_ROOT 
   ```
   * 安装 **git** , **clone 项目** [android-database-sqlcipher](https://github.com/sqlcipher/android-database-sqlcipher)
+  * 用 **Android Studio** 打开工程，安装工程 **编译的对应的sdk工具版本** 
   * 定位到项目目录，执行以下编译命令
    ```
     1. make init
