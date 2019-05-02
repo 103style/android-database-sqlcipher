@@ -15,6 +15,7 @@ import java.util.Random;
  */
 public class MainActivity extends AppCompatActivity {
 
+    private final String SQL_PASSWORD = "12312sda";
 
     private SQLiteDatabase mSQLiteDatabase;
 
@@ -27,7 +28,7 @@ public class MainActivity extends AppCompatActivity {
 
         SQLiteDatabase.loadLibs(this);
         SQLiteDbHelper helper = new SQLiteDbHelper(getApplicationContext());
-        mSQLiteDatabase = helper.getWritableDatabase("12312sda");
+        mSQLiteDatabase = helper.getWritableDatabase(SQL_PASSWORD);
 
         show = findViewById(R.id.show);
 
