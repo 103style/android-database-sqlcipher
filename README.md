@@ -18,18 +18,25 @@ Download : [android-database-sqlcipher-4.1.3.aar](https://github.com/103style/an
 本文出自:[**103style的博客**](http://blog.csdn.net/lxk_1993) 
 
 **build android-database-sqlcipher**
+
 ### 介绍
+
 **android-database-sqlcipher**  用于 **Android SQLite** 数据库的加密。
+
 维护者提供了 **收费** 和 **开源** 两个版本。
+
 **sqlcipher开发维护者官网**：[https://www.zetetic.net/sqlcipher/](https://www.zetetic.net/sqlcipher/)
+
 **github开源项目地址**：[android-database-sqlcipher](https://github.com/sqlcipher/android-database-sqlcipher)
 
 
 以下是笔者基于 **开源版本 4.1.3 版本** 编译之后生成文件的项目地址: [android-database-sqlcipher](https://github.com/103style/android-database-sqlcipher)
+
 或者直接点击下载 **4.1.3版本**对应的`aar包`。[下载链接](https://raw.githubusercontent.com/103style/android-database-sqlcipher/master/outputs/aar/android-database-sqlcipher-4.1.3.aar)
 
 ### 使用方法
 [官方介绍：https://www.zetetic.net/sqlcipher/sqlcipher-for-android/](https://www.zetetic.net/sqlcipher/sqlcipher-for-android/)
+
 * **添加 aar 到 工程 libs 目录下，然后添加以下**
 ```
 android {
@@ -53,6 +60,7 @@ dependencies {
 * 可参考 [Demo](https://github.com/103style/android-database-sqlcipher/tree/master/Demo)
 
 ### 编译方法
+
 * **官方4.1.3版本 介绍的编译方法**。`感觉太简介了，新手表示很难受`
     ```
     Building
@@ -69,7 +77,9 @@ dependencies {
     ```
 
 * **笔者编程的过程**
+
   由于当前的版本 **不支持windows下的编译**，所以笔者只能走 **Linux** 环境了
+  
   * 安装[Ubuntu 16.04](http://www.ubuntu.org.cn/download/desktop)
   * 安装 [Android Studio](https://developer.android.google.cn/studio)
   * 更新`jdk`为 openjdk 1.8.0 版本， 1.7.0的版本会报错
