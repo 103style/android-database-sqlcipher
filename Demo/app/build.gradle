@@ -1,6 +1,15 @@
 apply plugin: 'com.android.application'
 
 android {
+    signingConfigs {
+        sign {
+            keyAlias '103style'
+            keyPassword '123456'
+            storeFile file('./103style.jks')
+            storePassword '123456'
+        }
+    }
+
     compileSdkVersion 28
     defaultConfig {
         applicationId "com.example.test"
@@ -8,7 +17,12 @@ android {
         targetSdkVersion 28
         versionCode 1
         versionName "1.0"
+        signingConfig signingConfigs.sign
         testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
+
+        ndk{
+            abiFilters "armeabi-v7a",'x86'
+        }
     }
     buildTypes {
         release {

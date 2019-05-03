@@ -10,6 +10,7 @@ import android.widget.TextView;
 import net.sqlcipher.database.SQLiteDatabase;
 
 import java.util.Random;
+
 /**
  * created by 103style  2019/5/1 22:29
  */
@@ -51,7 +52,7 @@ public class MainActivity extends AppCompatActivity {
 
         // 相当于 select * from students 语句
         Cursor cursor = mSQLiteDatabase.query(SQLiteDbHelper.TABLE_STUDENT, null,
-                "cls_id > ? and id >= 1", new String[]{"3"},
+                null, null,
                 null, null, null, null);
 
         StringBuilder res = new StringBuilder();
@@ -62,7 +63,7 @@ public class MainActivity extends AppCompatActivity {
 
             // 先获取 name 的索引值，然后再通过索引获取字段值
             String stuName = cursor.getString(cursor.getColumnIndex("name"));
-            res.append("id:" + stuId + "  name:" + stuName + "\n");
+            res.append("id: " + stuId + "  name: " + stuName + "\n");
         }
 
         show.setText(res.toString());
@@ -72,7 +73,7 @@ public class MainActivity extends AppCompatActivity {
 
 
     public void insertStudents() {
-        for (int i = 0; i < 5; i++) {
+        for (int i = 0; i < 10; i++) {
             ContentValues values = studentToContentValues(mockStudent(i));
             mSQLiteDatabase.insert(SQLiteDbHelper.TABLE_STUDENT, null, values);
         }
@@ -82,7 +83,7 @@ public class MainActivity extends AppCompatActivity {
     private Student mockStudent(int i) {
         Student student = new Student();
         student.id = i;
-        student.name = "user-" + i;
+        student.name = "user - " + i;
         student.tel_no = String.valueOf(new Random().nextInt(200000));
         student.cls_id = new Random().nextInt(5);
         return student;
