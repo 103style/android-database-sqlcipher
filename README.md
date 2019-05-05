@@ -116,4 +116,10 @@ dependencies {
     2. make clean
     3. make build-release
    ```
+  * **release版本混淆配置**
+    ```
+    -keep class net.sqlcipher.** { *; }
+    -keep class net.sqlcipher.database.* { *; }
+    ```
+
 以上
