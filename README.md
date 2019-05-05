@@ -62,7 +62,7 @@ dependencies {
 
 ### 编译方法
 
-* **官方4.1.3版本 介绍的编译方法**。`感觉太简介了，新手表示很难受`
+* **官方4.1.3版本 介绍的编译方法**。`感觉太简洁了，新手表示很难受`
     ```
     Building
     In order to build android-database-sqlcipher from source you will need both the Android SDK as well as Android NDK. 
