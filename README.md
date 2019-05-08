@@ -110,7 +110,7 @@ dependencies {
     export PATH=$PATH:$ANDROID_NDK_ROOT 
   ```
   * 安装 **git** , **clone 项目** [android-database-sqlcipher](https://github.com/sqlcipher/android-database-sqlcipher)
-  * 用 **Android Studio** 打开工程，安装工程 **编译的对应的sdk工具版本**, 如果已安装对应sdk版本，会出现编译报错，没事，这是正常的，然后执行一下不就好。
+  * 用 **Android Studio** 打开工程，安装工程 **编译的对应的sdk工具版本**, 如果已安装对应sdk版本，会出现编译报错，没事，这是正常的，然后执行下一步就好。
   * 定位到项目目录，执行以下编译命令
    ```
     1. make init
