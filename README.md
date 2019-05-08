@@ -123,4 +123,13 @@ dependencies {
     -keep class net.sqlcipher.database.* { *; }
     ```
 
+
+### 运行报错问题
+* release版本运行报错问题 `No pending exception expected: java.lang.NoSuchFieldError`
+    这是因为没有添加以下混淆配置导致的
+    ```
+    -keep class net.sqlcipher.** { *; }
+    -keep class net.sqlcipher.database.* { *; }
+    ```
+
 以上
