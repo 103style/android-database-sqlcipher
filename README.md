@@ -55,9 +55,9 @@ dependencies {
     api(name: "android-database-sqlcipher-4.1.3", ext: 'aar')
 }
 ```
-* 用 `import net.sqlcipher.database.SQLiteDatabase` 替换 `import android.database.sqlite.SQLiteDatabase`
-* 用 `import net.sqlcipher.database.SQLiteOpenHelper` 替换 `import android.database.sqlite.SQLiteOpenHelper`
-* 在初始化数据库的时候先调用 `SQLiteDatabase.loadLibs(context);`
+* 用 **import net.sqlcipher.database.SQLiteDatabase** 替换 **import android.database.sqlite.SQLiteDatabase**
+* 用 **import net.sqlcipher.database.SQLiteOpenHelper** 替换 **import android.database.sqlite.SQLiteOpenHelper**
+* 在初始化数据库的时候先调用 **SQLiteDatabase.loadLibs(context);**
 * 可参考 [Demo](https://github.com/103style/android-database-sqlcipher/tree/master/Demo)
 
 ### 编译方法
