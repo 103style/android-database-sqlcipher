@@ -2,8 +2,7 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/android-database-sqlcipher/android-database-sqlcipher-android-database-sqlcipher-android-database-sqlcipher.iml" filepath="$PROJECT_DIR$/android-database-sqlcipher/android-database-sqlcipher-android-database-sqlcipher-android-database-sqlcipher.iml" />
-      <module fileurl="file://$PROJECT_DIR$/apps-android-database-sqlcipher-android-database-sqlcipher.iml" filepath="$PROJECT_DIR$/apps-android-database-sqlcipher-android-database-sqlcipher.iml" />
+      <module fileurl="file://$PROJECT_DIR$/android-database-sqlcipher.iml" filepath="$PROJECT_DIR$/android-database-sqlcipher.iml" />
     </modules>
   </component>
 </project>
