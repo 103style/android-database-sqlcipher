@@ -3,7 +3,7 @@ fork from https://github.com/sqlcipher/android-database-sqlcipher
 
 ### following is the open source build release aar
 
-Download : [android-database-sqlcipher-4.1.3.aar](https://github.com/103style/android-database-sqlcipher/blob/master/outputs/aar/android-database-sqlcipher-4.1.3.aar)
+Download : [android-database-sqlcipher-4.2.0.aar](https://github.com/103style/android-database-sqlcipher/blob/master/outputs/aar/android-database-sqlcipher-4.2.0-release.aar)
 
 ### 使用方法
 * [官方介绍 ](https://www.zetetic.net/sqlcipher/sqlcipher-for-android/)
@@ -30,9 +30,9 @@ Download : [android-database-sqlcipher-4.1.3.aar](https://github.com/103style/an
 **github开源项目地址**：[android-database-sqlcipher](https://github.com/sqlcipher/android-database-sqlcipher)
 
 
-以下是笔者基于 **开源版本 4.1.3 版本** 编译之后生成文件的项目地址: [android-database-sqlcipher](https://github.com/103style/android-database-sqlcipher)
+以下是笔者基于 **开源版本 4.2.0 版本** 编译之后生成文件的项目地址: [android-database-sqlcipher](https://github.com/103style/android-database-sqlcipher)
 
-或者直接点击下载 **4.1.3版本**对应的`aar包`。[下载链接](https://raw.githubusercontent.com/103style/android-database-sqlcipher/master/outputs/aar/android-database-sqlcipher-4.1.3.aar)
+或者直接点击下载 **4.2.0版本**对应的`aar包`。[下载链接](https://raw.githubusercontent.com/103style/android-database-sqlcipher/master/outputs/aar/android-database-sqlcipher-4.2.0-release.aar)
 
 ### 使用方法
 [官方介绍：https://www.zetetic.net/sqlcipher/sqlcipher-for-android/](https://www.zetetic.net/sqlcipher/sqlcipher-for-android/)
@@ -52,7 +52,7 @@ android {
 
 dependencies {
     ...
-    api(name: "android-database-sqlcipher-4.1.3", ext: 'aar')
+    api(name: "android-database-sqlcipher-4.2.0-release", ext: 'aar')
 }
 ```
 * 在初始化数据库的时候先调用 **SQLiteDatabase.loadLibs(context);**
@@ -62,7 +62,7 @@ dependencies {
 
 ### 编译方法
 
-* **官方4.1.3版本 介绍的编译方法**。`感觉太简洁了，新手表示很难受`
+* **官方4.2.0版本 介绍的编译方法**。`感觉太简洁了，新手表示很难受`
     ```
     Building
     In order to build android-database-sqlcipher from source you will need both the Android SDK as well as Android NDK. 
